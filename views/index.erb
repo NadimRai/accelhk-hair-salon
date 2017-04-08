@@ -1,0 +1,21 @@
+<h1>Welcome to Hair Salon</h1>
+
+  <div class="container">
+   
+    <a href="/stylists/new">Add New Stylist</a>
+  </div>
+  <p></p>
+  <% if @stylists.any?() %>
+    <h3>Here are your lists:</h3>
+  <ul>
+      <% @stylists.each() do |stylist| %>
+      <li><a href="/stylists/<%= stylist.id()%>">
+      		<%= stylist.name() %></a></li>
+      <% end %>
+    </ul>
+    <% else %>
+
+      <p>There are no lists yet!</p>
+
+  <% end %>
+  
