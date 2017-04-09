@@ -21,7 +21,7 @@
   </div>
   
   <% if @stylists.any?() %>
-    <h3>Here are your lists:</h3>
+    <h3>Here are your list of Stylists:</h3>
   <ul>
       <% @stylists.each() do |stylist| %>
       <li><a href="/stylists/<%= stylist.id()%>">
@@ -30,7 +30,7 @@
     </ul>
     <% else %>
 
-      <p>There are no lists yet!</p>
+      <p>No stylists listed yet!</p>
 
   <% end %>
   

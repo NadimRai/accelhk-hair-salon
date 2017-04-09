@@ -4,7 +4,7 @@
   <hr>
   <hr>
   <% if @stylist.clients().any?() %>
-    <h3>Here are all the tasks in this list:</h3>
+    <h3>List of clients of:</h3>
 
     <ul>
       <% @stylist.clients().each() do |client| %>
@@ -14,7 +14,7 @@
     </ul>
 
     <% else %>
-      <p>There are no tasks on this list!</p>
+      <p>This stylist does not  have any clients</p>
     <% end %>
 
   <div class="container">
