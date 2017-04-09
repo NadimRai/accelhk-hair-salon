@@ -1,10 +1,25 @@
-<h1>Welcome to Hair Salon</h1>
+<div class="jumbotron">
+
+</div>
 
   <div class="container">
-   
-    <a href="/stylists/new">Add New Stylist</a>
+   <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="/stylists/new">Add New Stylist</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+    
   </div>
-  <p></p>
+  
   <% if @stylists.any?() %>
     <h3>Here are your lists:</h3>
   <ul>
