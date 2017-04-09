@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hair Salon</title>
+
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+     <style>
+     @import url('https://fonts.googleapis.com/css?family=Lobster');
+     body{
+      background:url("img/abc.jpeg") no-repeat;
+     }
+      .jumbotron{
+        margin-top: 20px;
+        color: #eee;
+        background: #000;
+        font-family: 'Lobster', cursive;
+        text-align: center;
+      }
+
+      .display-palindrome{
+        margin-top: 60px;
+      }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </body>
+  </html>
