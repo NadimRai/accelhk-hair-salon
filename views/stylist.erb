@@ -1,6 +1,5 @@
-<h1><a href="/stylists/<%= @stylist.id()%>/edit">Edit<%= @stylist.name() %></h1>
-
-
+<h1><a href="/stylists/<%= @stylist.id()%>/edit">Edit<%= @stylist.name() %></a>
+</h1>
 
   <hr>
   <hr>
@@ -9,7 +8,8 @@
 
     <ul>
       <% @stylist.clients().each() do |client| %>
-        <li><%= client.name() %> </li>
+        <li><a href="/clients/<%=client.id()%>/edit">
+        <%=client.name()%></li>
       <% end %>
     </ul>
 
