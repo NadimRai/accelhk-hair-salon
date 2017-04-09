@@ -1,14 +1,6 @@
-<h1><%= @stylist.name() %></h1>
+<h1><a href="/stylists/<%= @stylist.id()%>/edit">Edit<%= @stylist.name() %></h1>
 
-<form action="/stylist" method="post">
-    <input id="stylist_id" name="stylist_id" type="hidden" 
-    	value="<%= @stylist.id() %>">
 
-    <label for="name">Name of the client:</label>
-    <input id="name" name="name" type="text">
-
-    <button type="submit">Add task</button>
-  </form>
 
   <hr>
   <hr>

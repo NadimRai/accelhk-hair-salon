@@ -58,3 +58,12 @@ require("spec_helper")
         expect(test_stylist.clients()).to(eq([test_client, test_client2]))
       end
     end
+
+    describe("#update") do
+      it("lets you update stylists in the database") do
+        stylist = Stylist.new({:name => "Richard Ng", :id => nil})
+        stylist.save()
+        stylist.update({:name => "Richard Ng"})
+        expect(stylist.name()).to(eq("David Fung"))
+      end
+    end

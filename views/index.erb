@@ -19,3 +19,16 @@
 
   <% end %>
   
+  <form action="/stylist" method="post">
+    <label for="stylist_id">Select a Stylist</label>
+    <select id='stylist_id' name='stylist_id' type='text'>
+      <% @stylists.each() do |stylist| %>
+        <option value="<%= stylist.id()%>"> <%= stylist.name() %> </option>
+      <% end %>
+    </select>
+
+    <label for="name">Name of the client:</label>
+    <input id="name" name="name" type="text">
+
+    <button type="submit">Add task</button>
+  </form>
