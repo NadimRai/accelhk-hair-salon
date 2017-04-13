@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+.navbar-nav{
+	font-color: #f63;
+}
 .jumbotron{
 	background: url("/img/barber.jpeg") no-repeat;
 	width:100%;
